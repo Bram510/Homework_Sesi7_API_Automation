@@ -43,7 +43,7 @@ describe('API Automation Test - Mocha & Supertest', function () {
     describe('POST /add-user (Positive Case)', function () {
         it('3. Add user berhasil', async function () {
             const newUser = {
-                "username": "aoaobaru",
+                "username": "aoaobaru", // untuk menghindari duplikasi username, gunakan username unik setiap kali menjalankan test
                 "age": 200
             };
 
